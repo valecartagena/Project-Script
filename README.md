@@ -27,10 +27,9 @@ In order to use the code, do the following:
 
 For running the scripts (Visual Studio Code is recommended):
 2. Run null_hypothesis.py first to analyze the significance of each of our parameters. For this part of our code we used bootstrapping with 95% of Confidence Interval. Use all of the parameters. Demand will be the dependent variable.
+
 3. Run last_lr.py, which will show the linear regression with only the statistically significant parameters as determined by the null hypothesis. Demand will be the dependent variable. Use only the statistically significant parameters as the independent.
+
 4. Run lasso.py, which uses a different method of determining the statistically significant parameters. Pass in all of the parameters except for demand as the independent, and pass in demand as the dependent. 
 
 
-
-lasso.py
-last_lr.py
