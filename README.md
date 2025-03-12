@@ -18,9 +18,11 @@ from sklearn.metrics import mean_squared_error, r2_score, roc_auc_score
 In order to use the code, do the following:
 1. Data and Files preparation:
     Install in a local computer the following files:
+    - lr_all_parameters.py
+    - null_hypothesis.py
     - lasso.py
     - last_lr.py
-    - null_hypothesis.py
+      
     Also install the dataset we are going to use:
     - dataset.csv
      Note: the dataset was obtained from: https://www.kaggle.com/datasets/aramacus/electricity-demand-in-victoria-australia?resource=download (All our scripts are linked to the dataset file name "dataset.csv)
