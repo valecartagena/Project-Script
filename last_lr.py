@@ -50,39 +50,3 @@ plt.xlabel("Actual Demand")
 plt.ylabel("Predicted Demand")
 plt.title("Actual vs Predicted Energy Demand")
 plt.show()
-
-# # Make predictions
-# predictions = demand_pred
-
-# # Determine the threshold using median of training data
-# threshold = np.median(y_train)  # Find the median demand in the training set
-
-# # Convert y_train and y_test into binary categories
-# y_train_binary = (y_train > threshold).astype(int)  # 1 if above median, else 0
-# y_test_binary = (y_test > threshold).astype(int)    # 1 if above median, else 0
-
-
-# # Compute AUROC
-# def calculate_auroc(preds, labels):
-#     return roc_auc_score(labels, preds)
-
-# # Permutation test function
-# def permutation_test(predictions, y_test_binary, n_permutations=1000):
-#     observed_auroc = calculate_auroc(predictions, y_test_binary)
-#     null_distribution = np.zeros(n_permutations)
-
-#    # np.random.seed(42)  # Ensure reproducibility
-#     for i in range(n_permutations):
-#         shuffled_labels = np.random.permutation(y_test_binary)  # Shuffle labels
-#         null_distribution[i] = calculate_auroc(predictions, shuffled_labels)  # Compute AUROC
-
-#     # Compute p-value: proportion of permuted AUROCs >= observed AUROC
-#     p_value = np.mean(null_distribution >= observed_auroc)
-    
-#     return null_distribution, p_value, observed_auroc
-
-# # Running permutation test
-# n_permutations = 1000
-# null_distribution, test_p_value, test_observed_auroc = permutation_test(predictions, y_test_binary, n_permutations)
-
-# print(f"Permutation Test p-value: {test_p_value}")
