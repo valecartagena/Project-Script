@@ -1,9 +1,9 @@
-#This is our project code for CHEMENG 177!#
+# This is our project code for CHEMENG 177!
 
-Project Overview:
+## Project Overview:
 This project aims to predict electricity demand using lasso regression and a null hypothesis test with the ultimate goal of moving toward clean energy. 
 
-Instructions to run the code:
+## Instructions to run the code:
 
 We use scikitlearn, numpy, and pandas as the basis for our project. Please download the following:
 import numpy as np
